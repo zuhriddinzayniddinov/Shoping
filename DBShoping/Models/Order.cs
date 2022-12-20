@@ -5,6 +5,7 @@ class Order
   public Guid OrderId { get; set; }
   public Guid CustomerId { get; set; }
   public Guid EmployeeId { get; set; }
+  public Guid ShipperId { get; set; }
   public DateTimeOffset OrderDate { get; set; }
   public DateTimeOffset ShippedDate { get; set; }
   public Transport ShipVia { get; set; }
@@ -12,6 +13,7 @@ class Order
   public string City { get; set; }
   public string Region { get; set; }
   public string Country { get; set; }
+  public ICollection<OrderDetail> OrderDetails { get; set; }
 }
 enum Transport
 {

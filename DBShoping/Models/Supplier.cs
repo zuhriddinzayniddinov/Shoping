@@ -8,4 +8,5 @@ class Supplier
   public string Region { get; set; }
   public string Country { get; set; }
   public string Phone { get; set; }
+  public ICollection<Product> Products { get; set; }
 }
