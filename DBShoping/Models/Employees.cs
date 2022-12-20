@@ -1,4 +1,4 @@
-namespace DBShoping;
+namespace DBShoping.Models;
 class Employee
 {
   public Guid EmployeeId { get; set; }
