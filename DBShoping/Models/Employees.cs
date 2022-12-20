@@ -10,4 +10,5 @@ class Employee
   public string City { get; set; }
   public string Country { get; set; }
   public string HomePhone { get; set; }
+  public ICollection<Order> Orders { get; set; }
 }
