@@ -1,4 +1,4 @@
-using DBShoping.Models;
+namespace DBShoping.Models;
 
 class Order
 {
