@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DBShoping.Models
 {
-    internal class Customer
+    public class Customer
     {
         public Guid CustomerID { get; set; }
         public string CompanyName { get; set; }

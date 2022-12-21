@@ -1,5 +1,6 @@
 namespace DBShoping.Models;
-class Employee
+
+public class Employee
 {
   public Guid EmployeeId { get; set; }
   public string  LastName { get; set; }
