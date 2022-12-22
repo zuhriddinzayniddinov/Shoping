@@ -1,11 +1,14 @@
 namespace DBShoping.Models;
 
-class Order
+public class Order
 {
   public Guid OrderId { get; set; }
   public Guid CustomerId { get; set; }
+  public Customer Customer { get; set; }
   public Guid EmployeeId { get; set; }
+  public Employee Employee { get; set; }
   public Guid ShipperId { get; set; }
+  public Shipper Shipper { get; set; }
   public DateTimeOffset OrderDate { get; set; }
   public DateTimeOffset ShippedDate { get; set; }
   public Transport ShipVia { get; set; }
@@ -15,7 +18,8 @@ class Order
   public string Country { get; set; }
   public ICollection<OrderDetail> OrderDetails { get; set; }
 }
-enum Transport
+
+public enum Transport
 {
   Avia,
   Ship,

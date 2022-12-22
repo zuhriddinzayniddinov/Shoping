@@ -1,6 +1,6 @@
 namespace DBShoping.Models;
 
-class Supplier
+public class Supplier
 {
   public Guid SupplierId { get; set; }
   public string CompanyName { get; set; }
